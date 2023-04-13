@@ -1,0 +1,207 @@
+body {
+    font-size: 16px;
+}
+/* === header === */
+header {
+    position: fixed;
+    left: 0; right: 0; top: 0;
+    background: #a1ad88;
+    z-index: 100;
+    opacity: 0.7;
+}
+
+header nav ul { display: flex; justify-content: center; padding: 0; }
+
+header nav ul li { margin: 0 2%; list-style: none; }
+
+header nav ul li a { color: #fff; text-decoration: none; font-size: 20px; }
+
+/* === section === */
+.sec01 { background: url('../img/bg/sec_bg01.jpg') no-repeat; background-size: cover; }
+.sec02 { background: url('../img/bg/sec_bg02.jpg') no-repeat; background-size: cover; }
+.sec03 { background: #f4f4f4; }
+.sec04 { background: url('../img/bg/sec_bg03.jpg') no-repeat; background-size: cover; }
+.sec05 { background: url('../img/bg/sec_bg04.jpg') no-repeat; background-size: cover; background-position: 0; }
+.sec06 { background: #f4f4f4; }
+
+/* sec01 */
+.sec01 .left {
+    position: relative;
+    width: 50%;
+    height: 80vh;
+    margin-top: 12%;
+    color: #fff;
+}
+.sec01 .left .title { position: absolute; right: 0; margin-top: 10%; }
+.sec01 .left .title span { margin: 0; font-size: 20px; }
+.sec01 .left .title h2 { margin: 0; font-size: 62px; line-height: 60px; -webkit-text-stroke: 1px #136b68; }
+.sec01 .left .title p { margin: 0; font-size: 30px; }
+.sec01 .left .sub_title { position: absolute; bottom: 0; }
+.sec01 .left .sub_title:before { content: ""; display: block; width: 100px; height: 2px; margin-bottom: 5px; background: #fff; }
+.sec01 .left .sub_title p { margin: 0; font-size: 20px; }
+.sec01 .left .sub_title .sub_img { display: inline-block; margin: 10px 0; }
+
+/* sec02 */
+.slide_wrap {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+}
+
+.slide_wrap .whiteboard {
+    height: 90%;
+    margin-top: 10%;
+    position: relative;
+}
+
+.slide_wrap .whiteboard > div {
+    width: 50%; height: 95%;
+    position: absolute; bottom: 0;
+}
+
+.slide_wrap .whiteboard .left { left: 0; }
+
+.slide_wrap .whiteboard .right { right: 0; }
+
+.slide_wrap .whiteboard .left > div, .slide_wrap .whiteboard .right > div { margin: 20px; }
+
+.project_box {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    width: 80%;
+}
+.project_box img { width: 100%; }
+.project_text { margin-top: 10%; background: rgba(255,255,255,0.5); padding: 5%; border-radius: 20px; }
+.project_text h4 { margin: 0; font-size: 30px; }
+.project_text span { margin: 25px 0 10px; font-size: 20px; font-weight: bold; display: block; }
+.project_text ul { padding-left: 20px; margin: 5px 0 10px; }
+.project_text li { list-style: disc; padding-left: 10px; }
+.project_text p { margin: 10px 0 30px; }
+
+/* sec03 */
+.sec03 h2 {
+    margin: 0; margin-top: 50px;
+    display: block; text-align: center; font-size: 50px; 
+    font-family: 'Nanum Pen Script', cursive;
+}
+.sec03 h3 {
+    font-size: 30px;
+    margin: 0; margin-bottom: 20px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+    color: #2d541e;
+}
+
+.slide_wrap .whiteboard .left li dl dd { 
+    position: relative;
+    margin: 0; margin-bottom: 30px; 
+    padding-left: 60px;
+    color: #484848;
+}
+
+.slide_wrap .whiteboard .left li dl dd:before {
+    content: '';
+    display: inline-block;
+    width: 11px; height: 11px;
+    background: #000;
+    box-sizing: border-box;
+    border-radius: 6px;
+    position: absolute; top: 14px; left: 26px;
+}
+
+.slide_wrap .whiteboard .left li dl dd:not(:last-child):after {
+    content: '';
+    display: inline-block;
+    width: 1px; height: 67px;
+    background: #dbdbdb;
+    position: absolute; top: 25px; left: 31px;
+}
+
+.slide_wrap .whiteboard .left li dl dd strong { font-size: 17px; color: #000; }
+
+.charts { 
+    width: 100%; text-align: center;
+    display: flex; gap: 20px 2%; flex-wrap: wrap; justify-content: center;
+}
+
+.charts .chart {
+    position: relative;
+    width: 105px; height: 105px;
+    display: inline-block;
+}
+
+
+.charts .chart h3.data {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    bottom: 0;
+    font-size: 0;
+}
+
+.charts .chart svg { display: block; width: 100px; height: 100px; margin: 0 auto; }
+
+.charts .chart svg circle {
+    fill: #fff;
+    stroke-dasharray: 251px;
+    stroke-dashoffset: 251px;
+    transform-origin: 50% 50%;
+    transform: rotate(-90deg);
+    stroke-linecap: round;
+    stroke-width: 8px;
+}
+
+.charts .chart:nth-child(1) svg circle{ stroke: #e44d26; }
+.charts .chart:nth-child(2) svg circle{ stroke: #379ad6; }
+.charts .chart:nth-child(3) svg circle{ stroke: #f0db4f; }
+.charts .chart:nth-child(4) svg circle{ stroke: #001833; }
+.charts .chart:nth-child(5) svg circle{ stroke: #ae4dff; }
+.charts .chart:nth-child(6) svg circle{ stroke: #06659d; }
+.charts .chart:nth-child(7) svg circle{ stroke: #6aad3d; }
+
+.charts .chart img{ width: 46px; height: 46px; position: absolute; top: 25%; left: 29%; border-radius: 50px; }
+
+/* sec04 */
+.sec04 h4 { color: #313b30; text-align: left; font-size: 2.5rem; margin: 0; margin-bottom: 40px; }
+.sec04 strong { font-size: 18px; display: inline-block; min-width: 100px; }
+.sec04 ul { margin: 0; margin-bottom: 20px; }
+.sec04 ul.top { margin: 0; margin-bottom: 40px; }
+.sec04 li { font-size: 16px; line-height: 20px; margin: 10px 0; }
+.sec04 .wbox { background: rgba(255,255,255,0.5); padding: 5%; border-radius: 20px; }
+
+/* sec05 */
+.sec05 p { margin: 0; margin-left: 6%; margin-bottom: 10px; font-size: 20px; font-weight: bold; }
+.sec05 div { margin-left: 6%; }
+.sec05 img { width: 32px; height: 32px; vertical-align: text-bottom; }
+.sec05_wrap { margin-top: 27%; }
+
+.svgWrap { font-family: 'Kumar One', cursive; display: block; margin-left: 5%; }
+.aniText {
+    font-size: 80px;
+    stroke: #2d541e;
+    stroke-width: 2;
+    animation : stroke 5s infinite alternate;
+}
+
+@keyframes stroke {
+    0%   {
+        fill:rgba(72,138,204,0); stroke:rgba(45, 84, 30, 1);
+        stroke-dashoffset:25%;
+        stroke-dasharray:0 50%;
+    }
+    70%  {fill:rgba(72,138,204,0); stroke:rgba(45, 84, 30, 1);}
+    80%  {fill:rgba(72,138,204,0); stroke:rgba(45, 84, 30, 1);} 
+    100% {
+        fill:rgba(32,60,21,1); stroke:rgba(54,95,160,0);
+        stroke-dashoffset:-25%;
+        stroke-dasharray:50% 0;
+    }
+}
+
+/* === footer === */
+.footer { height: 100px; text-align: center; margin: 10px 0; }
+.footer p { margin: 0; margin-top: 10px; }
+.footer a { color: #000; }
